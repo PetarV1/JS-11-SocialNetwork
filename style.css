@@ -16,6 +16,11 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 100px;
+    color: white;
+}
+
+p {
+    color: white;
 }
 
 h2 {
@@ -110,4 +115,46 @@ form div button {
     position: absolute;
     right: 30px;
     top: 30px;
+}
+
+.inner-container {
+    border: 1px solid white;
+    padding: 15px;  
+}
+
+.inner-container.left-side {
+    text-align: center;
+}
+
+.inner-container img.profile {
+    width: 70%;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    border: 5px solid dodgerblue;
+    margin-bottom: 20px;
+}
+
+.inner-container.right-side form {
+    display: flex;
+    height: 100px;
+}
+
+.inner-container.right-side form textarea{
+    width: 85%;
+    border: 0;
+    padding: 10px;
+    resize: none;
+    outline-color: dodgerblue;
+}
+
+.inner-container.right-side form button{
+    width: 15%;
+    border: 0;
+}
+
+#deleteProfile {
+    border: 2px solid rgb(158, 0, 0);
+    color: rgb(158, 0, 0);
+    padding: 5px 15px;
 }

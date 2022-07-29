@@ -52,3 +52,15 @@ let config = {
     }
     else alert("NIJE OK")
   })
+
+  document.querySelector("#loginForm").addEventListener("submit", e => {
+    e.preventDefault();
+
+    let email = document.querySelector("#login_email").value
+    let password = document.querySelector("#login_lozinka").value
+
+    let user = new User();
+    user.email = email
+    user.password = password
+    user.login();
+  })
