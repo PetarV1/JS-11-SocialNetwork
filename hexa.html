@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Hexa</title>
 </head>
-<body>
+<body> 
     <h1>Dobrodosli na HexU!</h1>
     <div class="container">
         <div class="row">
@@ -24,10 +24,13 @@
             </div>
             <div class="col-md-9">
                 <div class="inner-container right-side">
-                    <form action="postForm">
+                    <form id="postForm">
                         <textarea id="postContent" placeholder="Napisi objavu."></textarea>
                         <button>Objavi</button>
                     </form>
+
+                    <div id="allPostsWrapper"></div>
+
                 </div>
             </div>
         </div>
@@ -56,6 +59,8 @@
 
     <script src="js/Session.js"></script>
     <script src="js/User.js"></script>
+    <script src="js/Comment.js"></script>
+    <script src="js/Post.js"></script>
     <script src="js/hexa.js"></script>
 </body>
 </html>
